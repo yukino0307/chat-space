@@ -1,0 +1,38 @@
+.main-chat
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__group
+        test
+      .main-header__left-box__group__member-list
+        Member：
+        .main-header__left-box__group__member-list__menber
+          test
+    =link_to 'Edit', "#", class: 'main-header__edit-btn'
+
+  .main-message-list
+    .main-message-list__content
+      .main-message-list__content__history
+        %p.main-message-list__content__history__sender masa
+        %p.main-message-list__content__history__date 2020/1/1(Wed) 17:40:43
+      %p.main-message-list__content__text おはよう！
+  
+    .main-message-list__content
+      .main-message-list__content__history
+        %p.main-message-list__content__history__sender masa
+        %p.main-message-list__content__history__date 2020/1/1(Wed) 17:40:43
+      %p.main-message-list__content__text おはよう！
+
+    .main-message-list__content
+      .main-message-list__content__history
+        %p.main-message-list__content__history__sender masa
+        %p.main-message-list__content__history__date 2020/1/1(Wed) 17:40:43
+      %p.main-message-list__content__text おはよう！
+      
+  .main-message-form
+    .main-message-form__new-message
+      .main-message-form__new-message__input-box
+        %input.main-message-form__new-message__input-box__type-text{placeholder: "type a message"}
+        %label.main-message-form__new-message__input-box__image
+          =fa_icon 'image', class: 'icon'
+          %input.hide{type: 'file'}
+      %input.submit-btn{type: 'submit', name: 'send-btn', value: 'Send'}
