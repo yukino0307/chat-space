@@ -108,10 +108,12 @@
         padding: 0 20px;
         text-align: center;
         border :solid 1px #38aef0;
-        color: #38aef0;
         height: 40px;
         line-height: 40px;
-        text-decoration: none;
+        a{
+          text-decoration: none;
+          color: #38aef0;
+        }
       }
     }
 
@@ -152,14 +154,13 @@
     .main-message-form{
       background-color: #d2d2d2;
       height: 90px;
-      padding: 10px 40px;
-      display: flex;
+      padding: 20px 40px;
 
-      &__new-message{
+      .main-message-form__new-message{
         display: flex;
+        position: relative;
         line-height: 50px;
         width: 100%;
-        align-items: center;
 
         &__input-box{
           position: relative;
@@ -188,7 +189,7 @@
           }
         }
 
-        .submit-btn{
+        .submit{
           margin-left: 15px;
           height: 50px;
           cursor: pointer;
