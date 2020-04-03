@@ -14,12 +14,6 @@
 
   .main-message-list
     = render @messages
-    / .main-message-list__content
-    /   .main-message-list__content__history
-    /     %p.main-message-list__content__history__sender masa
-    /     %p.main-message-list__content__history__date 2020/1/1(Wed) 17:40:43
-    /   %p.main-message-list__content__text おはよう！
-  
       
   .main-message-form
     = form_for [@group, @message] do |f|
